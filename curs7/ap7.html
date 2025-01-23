@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function salut(val){
+            if(typeof val == "undefined"){
+            let nume = document.getElementById('nume').value
+        console.log(nume)
+            alert('Buna Seara!'+ val)
+        }else{
+            alert("Buna seara!" + val);
+        }
+    }
+    function getName(){
+        let nume = document.getElementById("nume").value;
+        console.log(nume);
+    }
+    </script>
+    
+    <input type="text" name="nume" id="nume" value="" onblur="getName()" >
+    
+    <button onclick="salut()">Salutare</button>
+    <button onclick="salut('Mihai')">Salutare1</button>
+    <button onclick="salut('Ion')">Salutare2</button>
+    <button onclick="salut('Vasile')">Salutare3</button>
+ 
+</body>
+</html>
