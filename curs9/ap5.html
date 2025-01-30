@@ -7,18 +7,18 @@
 </head>
 <body>
     <script>
+        try{
+            alert(1234);
+        }
+        catch(error){
+            console.error('Avem o eroare de forma;',error)
+        }
+        finally{
+            console.log('mesaj care se executa mereu')
+        }
+       
+        alert(5678);
 
-        let x = 11;
-
-        if(x < 10 ){
-            console.log('numarul 10 este mai mare :>> ', x);
-        }
-     else if (x==10){
-            console.log('numarul 10 este egal:>> ', x);
-        }
-        else{
-            console.log('numarul 10 este mai mic :>> ', x);
-        }
 
     </script>
 </body>
